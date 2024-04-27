@@ -2,24 +2,57 @@
 <html>
     <head>
         <title>Check Voting Eligibility</title>
+        <link
+            rel="icon"
+            href="https://m.economictimes.com/thumb/msid-102480240,width-1200,height-1200,resizemode-4,imgsize-40658/congress-may-not-hold-bengaluru-civic-polls-before-2024-general-election.jpg"
+            type="image/x-icon">
+            
+        <style> 
+        body {
+            background-color: rgb(182, 172, 198);
+            background-image: url(https://wallpapers.com/images/featured/indian-flag-hd-ppog2bywedaxxa6j.jpg);
+            background-repeat: repeat;
+            background-position: center;
+            
+        }
+        .cve {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration:underline ;
+        }
+        
+        .bex{
+            background-color: chartreuse;
+            color: rgb(163, 63, 23);
+        }
+        .edx{
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        </style>
+            
     </head>
     <body>
-        <h1>Check if you are eligible to vote</h1>
-        <p>You are eligible to vote if you are at least eighteen years of age.</p>
+        <h1 class="cve"><mark style="color: black;"><span style="background-color:orange ;">Check if you are eligible to vote</span></mark></h1>
+        <p><h3><marquee><mark><span style="background-color: beige;">*You are eligible to vote if you are at least eighteen years of age.*</span></marquee></h3></p>
         <form action="#">
-            <label for="age">Enter your age:</label>
-            <input type="number" id="age" name="age" required>
-            <button type="button" onclick="checkEligibility()">Check</button>
-        </form>
+           <p class="edx"> <label for="age"><span style="background-color: rgb(222, 221, 219);">Enter your age:</label> 
+            <input type="number" id="age" name="age" required> 
+            <button class="bex" type="button" onclick="checkEligibility()">let's see</button> </p>
+
+        </form> 
         <script>
             function checkEligibility() {
                 var age = document.getElementById('age').value;
                 if (age >= 18) {
                     alert('You are eligible to vote!');
                 } else {
-                    alert('You are not eligible to vote!');
+                    alert('You are not eligible to vote! wait till you are 18.');
                 }
             }
         </script>
+        <b><h2><mark><span style="background-color: chocolate;">*Voting helps citizens become more involved in their government and keep it accountable. To vote, you must meet specific requirements.In addition to voting, there are a few laws that ensure fair elections around the world.*</mark></h2></b>
     </body>
 </html>
